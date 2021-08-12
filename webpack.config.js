@@ -79,9 +79,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns:[
-        { from: '**/*', context: STATIC_PATH },
-        { from: '**/*', to:'eth-lib', context: 'src/eth-lib' },
-        { from: '**/*', to:'middlewares', context: 'src/middlewares' }
+        { from: '**/*', context: STATIC_PATH }
       ]
     })
   ]

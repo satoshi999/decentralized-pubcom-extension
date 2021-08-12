@@ -44,7 +44,7 @@ class Wallet {
     }
 
     this._account = (await browser.storage.local.get('account')).account as Account;
-    this._setting = (await browser.storage.local.get('setting')).account as Setting;
+    this._setting = (await browser.storage.local.get('setting')).setting as Setting;
 
     if(this._account && this._account.privateKey && this._setting.endpoint && this._setting.contractAddress) {
       this._commentStore = new ContractBase(this._account.privateKey, this._setting.contractAddress, commentStoreAbi, this._setting.endpoint);
