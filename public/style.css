@@ -1,0 +1,12 @@
+body {
+  height: 400px;
+  width: 750px;
+}
+
+.dialogue {
+  background: #fff;
+  position: absolute;
+  z-index: 100;
+  height: 400px;
+  width: 750px;
+}
